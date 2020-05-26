@@ -1,0 +1,27 @@
+{
+  "name": "iwantremotejob",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "@octokit/rest": "^17.9.2",
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "showdown": "^1.9.1",
+    "tinyify": "^2.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "browserify -p tinyify app.js -o dist/bundle_min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GreXLin85/IWantRemoteJob.git"
+  },
+  "author": "GreXLin85",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GreXLin85/IWantRemoteJob/issues"
+  },
+  "homepage": "https://github.com/GreXLin85/IWantRemoteJob#readme"
+}
