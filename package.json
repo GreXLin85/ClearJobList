@@ -1,6 +1,6 @@
 {
   "name": "iwantremotejob",
-  "version": "1.0.0",
+  "version": "1.5.0",
   "description": "",
   "main": "app.js",
   "dependencies": {
@@ -12,7 +12,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "build": "browserify -p tinyify app.js -o dist/bundle_min.js"
+    "build": "browserify -p tinyify app.js -o dist/js/bundle.min.js",
+    "watch": "watchify app.js -d -p tinyify -o dist/js/bundle.min.js -v"
   },
   "repository": {
     "type": "git",

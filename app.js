@@ -38,8 +38,8 @@ octokit.issues.listForRepo({
   } else {
     $(document).ready(function () {
       $("#jobs").append(
-        'No jobs found' +
-        '<Click me if you want to post a job advertisement'
+        "No jobs found <br>" +
+        '<a href="https://github.com/GreXLin85/IWantRemoteJob/issues/new"><kbd>Click me</kbd></a> if you want to post a job advertisement'
       );
     });
   }
@@ -54,6 +54,16 @@ function sleep(ms) {
 }
 
 window.a = async function a() {
+
+  $("#jobs").html(
+    '<div class="d-flex justify-content-center">' +
+    '<div class="spinner-border" role="status">' +
+    '<span class="sr-only">Loading...</span>' +
+    '</div>' +
+    '</div>')
+
+
+
   await sleep(10)
 
   let issue_numbers = await (window.location.hash.substr(1, window.location.hash.length))
