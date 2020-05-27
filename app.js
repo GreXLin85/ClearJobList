@@ -38,8 +38,7 @@ octokit.issues.listForRepo({
   } else {
     $(document).ready(function () {
       $("#jobs").append(
-        "No jobs found <br>" +
-        '<a href="https://github.com/GreXLin85/IWantRemoteJob/issues/new"><kbd>Click me</kbd></a> if you want to post a job advertisement'
+        "No jobs found <br>"
       );
     });
   }
